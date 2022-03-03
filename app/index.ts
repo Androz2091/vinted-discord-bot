@@ -2,7 +2,7 @@ import Discord, { TextChannel } from 'discord.js';
 const client = new Discord.Client({
     intents: [Discord.Intents.FLAGS.GUILDS]
 });
-
+import 'dotenv/config'
 import vinted from 'vinted-api';
 import { initialize, Subscription } from './database';
 import { getConnection } from 'typeorm';
